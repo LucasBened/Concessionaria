@@ -335,20 +335,18 @@ System.out.println("SistemaCarros registrado:\n" + carro.toString());
             System.out.println(carroDesejado.toString());
             System.out.println("Confirmar pagamento ?");
             pag = sc.next();
-            System.out.println(pag.equalsIgnoreCase("Sim") ?"Pagamento confirmado \nInsira o método de compra":pag.equalsIgnoreCase("Não")?"Saindo...":"Opção Inválida");
-            System.out.println("Pix, Cartão, Boleto");
-            pag2 = sc.next();
-            System.out.println(pag2.equalsIgnoreCase("PIX")? "Chave Pix: 1249058191jasodcmqo1849Conc1013920jc":pag2.equalsIgnoreCase("Cartão")?"Pagamento Confirmado":pag2.equalsIgnoreCase("Boleto")?"Boleto foi enviado ao seu email":"Opção Inválida");
+            System.out.println(pag.equalsIgnoreCase("Sim") ?"Pagamento confirmado \nInsira o método de compra": "Saindo...");
+            if(pag.equalsIgnoreCase("Sim")){
+                System.out.println("Pix, Cartão, Boleto");
+                pag2 = sc.next();
+                System.out.println(pag2.equalsIgnoreCase("PIX")? "Chave Pix: 1249058191jasodcmqo1849Conc1013920jc":pag2.equalsIgnoreCase("Cartão")?"Pagamento Confirmado":pag2.equalsIgnoreCase("Boleto")?"Boleto foi enviado ao seu email":"Opção Inválida");
+            }else{
+                System.out.println("Voltando ao menu principal...");
+            }
         } else {
             System.out.println("Desculpe, nenhum carro disponível com base nas suas escolhas.");
         }
     
-        System.out.println("\nCarros Registrados:");
-        for (SistemaCarros carro : carrosDisponiveis) {
-            if (carro != null) {
-                System.out.println(carro.toString());
-            }
-        }
     }
 
 // VERIFICADOR
