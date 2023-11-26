@@ -12,10 +12,10 @@ public class SistemaCarros {
     private String marca;
     private String cambio;
     private String ar;
-    private String window;
+    private String janela;
     private String preco;
 
-    public SistemaCarros(String aluguelCompra, String estado, String tipoCarro, String lugares, String motor, String marca, String cambio, String ar, String window, String preco) {
+    public SistemaCarros(String aluguelCompra, String estado, String tipoCarro, String lugares, String motor, String marca, String cambio, String ar, String janela, String preco) {
         this.aluguelCompra = aluguelCompra;
         this.estado = estado;
         this.tipoCarro = tipoCarro;
@@ -24,7 +24,7 @@ public class SistemaCarros {
         this.marca = marca;
         this.cambio = cambio;
         this.ar = ar;
-        this.window = window;
+        this.janela = janela;
         this.preco = preco;
     }
 
@@ -41,16 +41,16 @@ public class SistemaCarros {
                 marca.equals(carro.marca) &&
                 cambio.equals(carro.cambio) &&
                 ar.equals(carro.ar) &&
-                window.equals(carro.window) &&
+                janela.equals(carro.janela) &&
                 preco.equals(carro.preco);
     }
 
     public String toString() {
-        return aluguelCompra + " | " + estado + " | " + tipoCarro + " | " + lugares + " | " + motor + " | " + marca + " | " + cambio + " | " + ar + " | " + window + " | " + "Preço: " + preco + " R$";
+        return aluguelCompra + " | " + estado + " | " + tipoCarro + " | " + lugares + " | " + motor + " | " + marca + " | " + cambio + " | " + ar + " | " + janela + " | " + "Preço: " + preco + " R$";
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(aluguelCompra, estado, tipoCarro, lugares, motor, marca, cambio, ar, window, preco);
+        return Objects.hash(aluguelCompra, estado, tipoCarro, lugares, motor, marca, cambio, ar, janela, preco);
     }
 }
