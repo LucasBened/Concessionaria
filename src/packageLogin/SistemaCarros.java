@@ -28,7 +28,7 @@ public class SistemaCarros {
         this.preco = preco;
     }
 
-    @Override
+
     public boolean equals(Object obj) {
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
@@ -49,7 +49,7 @@ public class SistemaCarros {
         return aluguelCompra + " | " + estado + " | " + tipoCarro + " | " + lugares + " | " + motor + " | " + marca + " | " + cambio + " | " + ar + " | " + janela + " | " + "Preço: " + preco + " R$";
     }
 
-    @Override
+
     public int hashCode() {
         return Objects.hash(aluguelCompra, estado, tipoCarro, lugares, motor, marca, cambio, ar, janela, preco);
     }
