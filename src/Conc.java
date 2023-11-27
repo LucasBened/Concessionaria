@@ -339,7 +339,7 @@ System.out.println("SistemaCarros registrado:\n" + carro.toString());
             if(pag.equalsIgnoreCase("Sim")){
                 System.out.println("Pix, Cartão, Boleto");
                 pag2 = sc.next();
-                System.out.println(pag2.equalsIgnoreCase("PIX")? "Chave Pix: 1249058191jasodcmqo1849Conc1013920jc":pag2.equalsIgnoreCase("Cartão")?"Pagamento Confirmado":pag2.equalsIgnoreCase("Boleto")?"Boleto foi enviado ao seu email":"Opção Inválida");
+                System.out.println(pag2.equalsIgnoreCase("PIX")? "Chave Pix: 1249058191jasodcmqo1849Conc1013920jc":pag2.equalsIgnoreCase("CARTAO")?"Pagamento Confirmado":pag2.equalsIgnoreCase("Boleto")?"Boleto foi enviado ao seu email":"Opção Inválida");
             }else{
                 System.out.println("Voltando ao menu principal...");
             }
